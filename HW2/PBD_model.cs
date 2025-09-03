@@ -177,7 +177,7 @@ public class PBD_model : MonoBehaviour
 			float len = dir.magnitude;
 			if (len < R)
 			{
-				V[i] += C + R * dir.normalized - X[i] / t;
+				V[i] += (C + R * dir.normalized - X[i]) / t;
 				X[i] = C + R * dir.normalized;
 
 			}
